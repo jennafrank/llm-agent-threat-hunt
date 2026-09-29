@@ -1,0 +1,11 @@
+// D1: Marimo Kernel RCE — External WebSocket Upgrade
+// ATT&CK: T1190 (Exploit Public-Facing Application)
+// Data Source: ApacheAccess_CL
+// FP Assessment: Legitimate internal notebook users; the notebook should
+//   not be internet-reachable once hardened, so any external hit is actionable.
+// Hunt 24 — TideGlass | Jenna Frank
+
+ApacheAccess_CL
+| where UriStem == "/ws/kernel" and HttpStatus == "101"
+| where not(ClientIP startswith "10.6.0.")   // exclude internal subnet
+| project TimeGenerated, Computer, ClientIP, UriStem, HttpStatus

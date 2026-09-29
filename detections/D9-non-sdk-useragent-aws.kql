@@ -1,0 +1,13 @@
+// D9: Non-SDK HTTP-Library User-Agent on AWS API Calls
+// ATT&CK: — (Behavioral indicator, not a direct technique mapping)
+// Data Source: AWSCloudTrail
+// Logic: AWS API activity whose user-agent is a raw HTTP library
+//   (httpx, requests, urllib) rather than an AWS SDK or CLI.
+// FP Assessment: Some legitimate scripts may use raw HTTP libraries;
+//   correlate with access-key owner and call pattern.
+// Hunt 24 — TideGlass | Jenna Frank
+
+AWSCloudTrail
+| where UserAgent has_any ("python-httpx","python-requests","httpx","urllib","Go-http-client")
+| where UserAgent !has "aws-sdk" and UserAgent !has "aws-cli" and UserAgent !has "boto3"
+| summarize calls=count(), events=make_set(EventName) by UserIdentityAccessKeyId, UserAgent

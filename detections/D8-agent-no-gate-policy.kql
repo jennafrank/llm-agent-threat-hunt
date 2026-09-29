@@ -1,0 +1,12 @@
+// D8: Agent Action with No Gate Policy (Guardrail Coverage Gap)
+// ATT&CK: AML.T0098 (AI Agent Tool Credential Harvesting, ATLAS)
+// Data Source: LLMAgentLogs_CL
+// Logic: Any agent tool call on a high-impact tool where the guardrail
+//   records "no policy matched".
+// FP Assessment: None; each hit is both an alert and a guardrail gap to fix.
+// Hunt 24 — TideGlass | Jenna Frank
+
+LLMAgentLogs_CL
+| where gate_reason == "no policy matched"
+| where tool_name has_any ("GetSecretValue","ssh","exfiltrate","assume role","store key")
+| project TimeGenerated, session_id, actor, tool_name, gate_decision, gate_reason

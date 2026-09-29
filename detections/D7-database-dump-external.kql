@@ -1,0 +1,15 @@
+// D7: Database Dump to an External Destination
+// ATT&CK: T1213.006 (Data from Information Repositories: Databases)
+//          T1567.002 (Exfiltration Over Web Service: Exfiltration to Cloud Storage)
+// Data Source: LinuxShellHistory_CL
+// Logic: pg_dump run by a non-backup account, or any pg_dump piped to an
+//   external upload (curl, wget, etc).
+// FP Assessment: The nightly backup runs as backup writing to a local
+//   /backup/ path; any pg_dump by another user or to an external
+//   destination is anomalous.
+// Hunt 24 — TideGlass | Jenna Frank
+
+LinuxShellHistory_CL
+| where Command has "pg_dump"
+| where ShellUser != "backup" or Command has "curl" or Command has "http"
+| project TimeGenerated, Computer, ShellUser, Command

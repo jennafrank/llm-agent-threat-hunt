@@ -1,0 +1,12 @@
+// D4: One Access Key Across Many Source IPs (Egress Pool)
+// ATT&CK: T1090 (Proxy)
+// Data Source: AWSCloudTrail
+// Threshold: 3+ distinct source IPs for a single access key in 15 minutes
+// FP Assessment: Legitimate multi-NAT or roaming egress; tune per
+//   environment. Investigate any key that trips this.
+// Hunt 24 — TideGlass | Jenna Frank
+
+AWSCloudTrail
+| summarize ips = dcount(SourceIpAddress), ipset = make_set(SourceIpAddress)
+    by UserIdentityAccessKeyId, bin(TimeGenerated, 15m)
+| where ips >= 3

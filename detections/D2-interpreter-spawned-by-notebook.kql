@@ -1,0 +1,20 @@
+// D2: Interpreter Spawned by the Notebook Service
+// ATT&CK: T1059.006 (Command and Scripting Interpreter: Python)
+// Data Source: LinuxProcess_CL joined to LinuxNetwork_CL
+// FP Assessment: Analyst cells run under the kernel; the network/IMDS
+//   condition is what makes it malicious. Join the spawn to any outbound
+//   connection by the same PID within 10 minutes.
+// Hunt 24 — TideGlass | Jenna Frank
+
+let window = 10m;
+LinuxProcess_CL
+| where TargetProcessName startswith "python"
+| where ActingProcessCommandLine has "marimo"
+| project spawn=EventStartTime, Dvc, pid=TargetProcessId, TargetProcessCommandLine
+| join kind=inner (
+    LinuxNetwork_CL
+    | where DstIpAddr !startswith "10.6.0." and DstIpAddr != "127.0.0.1"
+    | project net=EventStartTime, Dvc, pid=ActingProcessId, DstIpAddr, DstPortNumber
+) on Dvc, pid
+| where net between (spawn .. spawn + window)
+| project spawn, net, Dvc, pid, TargetProcessCommandLine, DstIpAddr, DstPortNumber

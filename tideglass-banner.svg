@@ -1,0 +1,254 @@
+<svg width="100%" viewBox="0 0 680 240" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Hunt 24 — TideGlass: Autonomous LLM-Agent Post-Exploitation</title>
+  <desc>Animated banner for the TideGlass threat hunt repo, coral and mint palette matching Jenna Frank's GitHub branding.</desc>
+
+  <defs>
+    <clipPath id="wc">
+      <rect x="0" y="0" width="680" height="240" rx="10"/>
+    </clipPath>
+    <linearGradient id="bggrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0F1A"/>
+      <stop offset="100%" stop-color="#1A0A14"/>
+    </linearGradient>
+    <linearGradient id="coralStreak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF6B9D" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#FF6B9D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFB3D1" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#FF6B9D" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FF6B9D" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mintStreak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7FFFD4" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#7FFFD4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#B0FFF0" stop-opacity="0.8"/>
+      <stop offset="55%" stop-color="#7FFFD4" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#7FFFD4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="coralLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF6B9D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF6B9D" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FF6B9D" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mintLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7FFFD4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7FFFD4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7FFFD4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="alertGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF4444" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FF4444" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="680" height="240" fill="url(#bggrad)" clip-path="url(#wc)"/>
+
+  <!-- Dot grid -->
+  <g clip-path="url(#wc)" opacity="0.08">
+    <g fill="#FF6B9D">
+      <circle cx="40" cy="40" r="1"/><circle cx="80" cy="40" r="1"/><circle cx="120" cy="40" r="1"/><circle cx="160" cy="40" r="1"/><circle cx="200" cy="40" r="1"/><circle cx="240" cy="40" r="1"/><circle cx="280" cy="40" r="1"/><circle cx="320" cy="40" r="1"/><circle cx="360" cy="40" r="1"/><circle cx="400" cy="40" r="1"/><circle cx="440" cy="40" r="1"/><circle cx="480" cy="40" r="1"/><circle cx="520" cy="40" r="1"/><circle cx="560" cy="40" r="1"/><circle cx="600" cy="40" r="1"/><circle cx="640" cy="40" r="1"/>
+      <circle cx="40" cy="80" r="1"/><circle cx="80" cy="80" r="1"/><circle cx="120" cy="80" r="1"/><circle cx="160" cy="80" r="1"/><circle cx="200" cy="80" r="1"/><circle cx="240" cy="80" r="1"/><circle cx="280" cy="80" r="1"/><circle cx="320" cy="80" r="1"/><circle cx="360" cy="80" r="1"/><circle cx="400" cy="80" r="1"/><circle cx="440" cy="80" r="1"/><circle cx="480" cy="80" r="1"/><circle cx="520" cy="80" r="1"/><circle cx="560" cy="80" r="1"/><circle cx="600" cy="80" r="1"/><circle cx="640" cy="80" r="1"/>
+      <circle cx="40" cy="120" r="1"/><circle cx="80" cy="120" r="1"/><circle cx="120" cy="120" r="1"/><circle cx="160" cy="120" r="1"/><circle cx="200" cy="120" r="1"/><circle cx="240" cy="120" r="1"/><circle cx="280" cy="120" r="1"/><circle cx="320" cy="120" r="1"/><circle cx="360" cy="120" r="1"/><circle cx="400" cy="120" r="1"/><circle cx="440" cy="120" r="1"/><circle cx="480" cy="120" r="1"/><circle cx="520" cy="120" r="1"/><circle cx="560" cy="120" r="1"/><circle cx="600" cy="120" r="1"/><circle cx="640" cy="120" r="1"/>
+      <circle cx="40" cy="160" r="1"/><circle cx="80" cy="160" r="1"/><circle cx="120" cy="160" r="1"/><circle cx="160" cy="160" r="1"/><circle cx="200" cy="160" r="1"/><circle cx="240" cy="160" r="1"/><circle cx="280" cy="160" r="1"/><circle cx="320" cy="160" r="1"/><circle cx="360" cy="160" r="1"/><circle cx="400" cy="160" r="1"/><circle cx="440" cy="160" r="1"/><circle cx="480" cy="160" r="1"/><circle cx="520" cy="160" r="1"/><circle cx="560" cy="160" r="1"/><circle cx="600" cy="160" r="1"/><circle cx="640" cy="160" r="1"/>
+      <circle cx="40" cy="200" r="1"/><circle cx="80" cy="200" r="1"/><circle cx="120" cy="200" r="1"/><circle cx="160" cy="200" r="1"/><circle cx="200" cy="200" r="1"/><circle cx="240" cy="200" r="1"/><circle cx="280" cy="200" r="1"/><circle cx="320" cy="200" r="1"/><circle cx="360" cy="200" r="1"/><circle cx="400" cy="200" r="1"/><circle cx="440" cy="200" r="1"/><circle cx="480" cy="200" r="1"/><circle cx="520" cy="200" r="1"/><circle cx="560" cy="200" r="1"/><circle cx="600" cy="200" r="1"/><circle cx="640" cy="200" r="1"/>
+    </g>
+  </g>
+
+  <!-- ASCII border - top and bottom -->
+  <text x="20" y="20" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.7">+------------------------------------------------------------------+</text>
+  <text x="20" y="232" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.7">+------------------------------------------------------------------+</text>
+
+  <!-- ASCII border - sides -->
+  <text x="20" y="38" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.4">|</text>
+  <text x="20" y="56" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.35">|</text>
+  <text x="20" y="74" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.3">|</text>
+  <text x="20" y="92" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.3">|</text>
+  <text x="20" y="110" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.3">|</text>
+  <text x="20" y="128" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.3">|</text>
+  <text x="20" y="146" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.3">|</text>
+  <text x="20" y="164" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.3">|</text>
+  <text x="20" y="182" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.35">|</text>
+  <text x="20" y="200" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.4">|</text>
+  <text x="20" y="218" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.45">|</text>
+  <text x="658" y="38" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.4">|</text>
+  <text x="658" y="56" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.35">|</text>
+  <text x="658" y="74" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.3">|</text>
+  <text x="658" y="92" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.3">|</text>
+  <text x="658" y="110" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.3">|</text>
+  <text x="658" y="128" font-family="'Courier New', monospace" font-size="11" fill="#FF6B9D" opacity="0.3">|</text>
+  <text x="658" y="146" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.3">|</text>
+  <text x="658" y="164" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.3">|</text>
+  <text x="658" y="182" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.35">|</text>
+  <text x="658" y="200" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.4">|</text>
+  <text x="658" y="218" font-family="'Courier New', monospace" font-size="11" fill="#7FFFD4" opacity="0.45">|</text>
+
+  <!-- Animated streaks on borders -->
+  <rect x="-200" y="19" width="250" height="1" fill="url(#coralStreak)" clip-path="url(#wc)">
+    <animate attributeName="x" values="-200;680" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="880" y="231" width="250" height="1" fill="url(#mintStreak)" clip-path="url(#wc)">
+    <animate attributeName="x" values="880;-250" dur="3.6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Corner decorations -->
+  <text x="36" y="36" font-family="'Courier New', monospace" font-size="10" fill="#FF4444" opacity="0.7">[!] ALERT</text>
+  <text x="550" y="36" font-family="'Courier New', monospace" font-size="10" fill="#7FFFD4" opacity="0.5">CVE-2026-39987</text>
+
+  <!-- Alert indicator - pulsing -->
+  <circle cx="42" cy="32" r="3" fill="#FF4444" opacity="0">
+    <animate attributeName="r" values="3;8;3" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Top label -->
+  <text x="340" y="58" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="11"
+    letter-spacing="3"
+    fill="#FF6B9D"
+    opacity="0.8">HUNT 24  //  THREAT HUNT REPORT  //  1ST PLACE</text>
+
+  <rect x="80" y="64" width="520" height="1" fill="url(#coralLine)" opacity="0.6"/>
+
+  <!-- TIDEGLASS pixel art title -->
+  <g fill="#FFE4F0" opacity="0.97">
+    <!-- T -->
+    <rect x="120" y="80" width="35" height="7"/>
+    <rect x="131" y="87" width="7" height="35"/>
+    <!-- I -->
+    <rect x="166" y="80" width="7" height="42"/>
+    <!-- D -->
+    <rect x="184" y="80" width="7" height="42"/>
+    <rect x="191" y="80" width="14" height="7"/>
+    <rect x="205" y="87" width="7" height="28"/>
+    <rect x="191" y="115" width="14" height="7"/>
+    <!-- E -->
+    <rect x="223" y="80" width="7" height="42"/>
+    <rect x="230" y="80" width="18" height="7"/>
+    <rect x="230" y="96" width="14" height="7"/>
+    <rect x="230" y="115" width="18" height="7"/>
+    <!-- G -->
+    <rect x="262" y="80" width="25" height="7"/>
+    <rect x="262" y="87" width="7" height="28"/>
+    <rect x="262" y="115" width="25" height="7"/>
+    <rect x="280" y="103" width="7" height="12"/>
+    <rect x="275" y="103" width="12" height="7"/>
+    <!-- L -->
+    <rect x="300" y="80" width="7" height="42"/>
+    <rect x="307" y="115" width="18" height="7"/>
+    <!-- A -->
+    <rect x="340" y="87" width="7" height="35"/>
+    <rect x="347" y="80" width="14" height="7"/>
+    <rect x="361" y="87" width="7" height="35"/>
+    <rect x="347" y="101" width="14" height="7"/>
+    <!-- S -->
+    <rect x="379" y="80" width="25" height="7"/>
+    <rect x="379" y="87" width="7" height="14"/>
+    <rect x="379" y="101" width="25" height="7"/>
+    <rect x="397" y="108" width="7" height="7"/>
+    <rect x="379" y="115" width="25" height="7"/>
+    <!-- S -->
+    <rect x="415" y="80" width="25" height="7"/>
+    <rect x="415" y="87" width="7" height="14"/>
+    <rect x="415" y="101" width="25" height="7"/>
+    <rect x="433" y="108" width="7" height="7"/>
+    <rect x="415" y="115" width="25" height="7"/>
+  </g>
+
+  <!-- Mint highlight overlay on select bars -->
+  <g fill="#7FFFD4" opacity="0.2">
+    <rect x="120" y="80" width="35" height="7"/>
+    <rect x="230" y="80" width="18" height="7"/>
+    <rect x="262" y="80" width="25" height="7"/>
+    <rect x="347" y="80" width="14" height="7"/>
+    <rect x="379" y="80" width="25" height="7"/>
+    <rect x="415" y="80" width="25" height="7"/>
+  </g>
+
+  <!-- Scanning cursor over title -->
+  <rect x="115" y="78" width="10" height="46" fill="#FF6B9D" opacity="0" clip-path="url(#wc)">
+    <animate attributeName="x" values="115;445;115" dur="3.5s" repeatCount="indefinite" calcMode="ease-in-out"/>
+    <animate attributeName="opacity" values="0;0.12;0" dur="3.5s" repeatCount="indefinite" calcMode="ease-in-out"/>
+  </rect>
+
+  <!-- Blinking cursor after title -->
+  <rect x="448" y="80" width="8" height="42" rx="1" fill="#FF6B9D" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Divider line -->
+  <rect x="80" y="132" width="520" height="1" fill="url(#mintLine)" opacity="0.7"/>
+
+  <!-- Traveling dots on divider -->
+  <circle r="2" fill="#7FFFD4" opacity="0.8">
+    <animateMotion dur="4s" repeatCount="indefinite">
+      <mpath href="#divpath"/>
+    </animateMotion>
+  </circle>
+  <path id="divpath" d="M80,133 L600,133" fill="none" stroke="none"/>
+
+  <circle r="1.5" fill="#FF6B9D" opacity="0.7">
+    <animateMotion dur="4s" repeatCount="indefinite" begin="2s">
+      <mpath href="#divpath2"/>
+    </animateMotion>
+  </circle>
+  <path id="divpath2" d="M600,133 L80,133" fill="none" stroke="none"/>
+
+  <!-- Subtitle -->
+  <text x="340" y="155"
+    text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="11"
+    letter-spacing="4"
+    fill="#7FFFD4"
+    opacity="0.9">AUTONOMOUS LLM-AGENT POST-EXPLOITATION</text>
+
+  <!-- Attack chain summary -->
+  <text x="340" y="178"
+    text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10"
+    letter-spacing="1"
+    fill="#FF6B9D"
+    opacity="0.6">RCE ──► IMDS ──► Secrets ──► SSH ──► pg_dump ──► exfil</text>
+
+  <!-- Animated data flow dots along the attack chain -->
+  <circle r="2.5" fill="#FF4444" opacity="0">
+    <animateMotion dur="2.8s" repeatCount="indefinite">
+      <mpath href="#chainpath"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;0.8;0.8;0" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <path id="chainpath" d="M140,175 L540,175" fill="none" stroke="none"/>
+
+  <!-- Stats row -->
+  <text x="140" y="200"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10"
+    fill="#FFD700"
+    opacity="0.8">96/100</text>
+  <text x="230" y="200"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10"
+    fill="#FF6B9D"
+    opacity="0.6">10 findings</text>
+  <text x="350" y="200"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10"
+    fill="#FF6B9D"
+    opacity="0.6">9 detections</text>
+  <text x="470" y="200"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10"
+    fill="#FF6B9D"
+    opacity="0.6">52 minutes</text>
+
+  <!-- Bottom corner labels -->
+  <text x="36" y="220" font-family="'Courier New', monospace" font-size="10" fill="#7FFFD4" opacity="0.5">{ severity: high }</text>
+  <text x="460" y="220" font-family="'Courier New', monospace" font-size="10" fill="#FF6B9D" opacity="0.5">[ jenna frank // 2026 ]</text>
+
+  <!-- Decorative code elements -->
+  <text x="42" y="108" font-family="'Courier New', monospace" font-size="13" fill="#FF6B9D" opacity="0.35">$$</text>
+  <text x="630" y="108" font-family="'Courier New', monospace" font-size="13" fill="#7FFFD4" opacity="0.35">~/</text>
+
+</svg>
