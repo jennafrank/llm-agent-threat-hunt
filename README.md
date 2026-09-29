@@ -103,9 +103,15 @@ SOC Operations Lead · Log(N) Pacific Cyber Range
 
 *Report shaped to PEAK (Splunk SURGe) and TaHiTI methodology.*
 
+---
 
 
 
+
+
+
+
+---
 ## Key Findings
 
 | # | Finding | ATT&CK / ATLAS |
