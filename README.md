@@ -40,19 +40,6 @@ Human Tasking
 
 ![Key Findings](images/key-findings.png)
 
-| # | Finding | ATT&CK / ATLAS |
-|---|---------|--------|
-| F1 | Unauthenticated marimo kernel RCE was the entry point | T1190 |
-| F2 | Code execution ran as an interpreter under the notebook service | T1059.006 |
-| F3 | Cloud identity stolen via IMDS metadata service | T1552.005, AML.T0098 |
-| F4 | Secrets access routed through a 6-address egress pool | T1090 |
-| F5 | Single GetSecretValue call stole the bastion deploy key | T1552.004, T1555.006 |
-| F6 | Stolen key used for lateral movement to bastion via SSH | T1021.004, T1078.004 |
-| F7 | Customer database enumerated by size, dumped, and exfiltrated | T1213.006, T1567.002 |
-| F8 | Entire chain was human-tasked, executed autonomously | AML.T0098 |
-| F9 | Every malicious step had a legitimate twin, separated by one field | — |
-| F10 | Agent's cloud calls carry a distinctive HTTP-library user-agent | — |
-
 ## Repo Contents
 
 ```
@@ -115,3 +102,24 @@ SOC Operations Lead · Log(N) Pacific Cyber Range
 ---
 
 *Report shaped to PEAK (Splunk SURGe) and TaHiTI methodology.*
+
+
+
+
+## Key Findings
+
+| # | Finding | ATT&CK / ATLAS |
+|---|---------|--------|
+| F1 | Unauthenticated marimo kernel RCE was the entry point | T1190 |
+| F2 | Code execution ran as an interpreter under the notebook service | T1059.006 |
+| F3 | Cloud identity stolen via IMDS metadata service | T1552.005, AML.T0098 |
+| F4 | Secrets access routed through a 6-address egress pool | T1090 |
+| F5 | Single GetSecretValue call stole the bastion deploy key | T1552.004, T1555.006 |
+| F6 | Stolen key used for lateral movement to bastion via SSH | T1021.004, T1078.004 |
+| F7 | Customer database enumerated by size, dumped, and exfiltrated | T1213.006, T1567.002 |
+| F8 | Entire chain was human-tasked, executed autonomously | AML.T0098 |
+| F9 | Every malicious step had a legitimate twin, separated by one field | — |
+| F10 | Agent's cloud calls carry a distinctive HTTP-library user-agent | — |
+
+```
+
