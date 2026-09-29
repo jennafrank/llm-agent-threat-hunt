@@ -40,7 +40,7 @@ Human Tasking
 
 ![Key Findings](images/key-findings.png)
 
-| # | Finding | ATT&CK |
+| # | Finding | ATT&CK / ATLAS |
 |---|---------|--------|
 | F1 | Unauthenticated marimo kernel RCE was the entry point | T1190 |
 | F2 | Code execution ran as an interpreter under the notebook service | T1059.006 |
@@ -104,7 +104,7 @@ See [ATTACK-MAPPING.md](ATTACK-MAPPING.md) for the full breakdown.
 
 ## Context
 
-This hunt was conducted on the [Log(N) Pacific Cyber Range](https://logn.pacificcyberrange.com), an educational MSSP/MDR-style training environment. The scenario simulated a real-world autonomous LLM agent attack based on [Sysdig's 2026 research](https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html) into post-exploitation via marimo CVE-2026-39987.
+This hunt was conducted on the [Log(N) Pacific Cyber Range](https://logn.pacificcyberrange.com) This scenario simulated a real-world autonomous LLM agent attack based on [Sysdig's 2026 research](https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html) into post-exploitation via marimo CVE-2026-39987.
 
 ## Author
 
